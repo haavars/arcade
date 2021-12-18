@@ -18,6 +18,7 @@ defmodule ArcadeWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    live "/invite", InviteLive
   end
 
   # Other scopes may use custom stacks.
